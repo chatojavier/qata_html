@@ -1,0 +1,21 @@
+
+  
+  .inicio__slide {
+    height: calc(100% - 90px);
+    min-height: calc(100% - 90px);
+  }
+
+
+  .banner__post {
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+ 
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  

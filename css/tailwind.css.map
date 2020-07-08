@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;mDAEmD;AAEnD,mCAAmC;AAEnC,SAAS,CAAT,IAAS;AAET,iCAAiC;AAEjC,yCAAyC;AAEzC,SAAS,CAAT,UAAS;AAET,uCAAuC;AAEvC,wCAAwC;AAExC,SAAS,CAAT,SAAS;AAET,sCAAsC",
+    "sources": [
+        "../../sass/tailwind.scss"
+    ],
+    "names": [],
+    "file": "tailwind.css"
+}
