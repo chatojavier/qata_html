@@ -271,21 +271,43 @@
                 </div>
             </div>
             <div class="insta-container">
-                <figure class="insta-container__item">
-                    <img src="img/insta_img_001.jpg" srcset="img/insta_img_001@2x.jpg" alt="Qata Alpaca - Artisans working Alpaca's fur.">
-                </figure>
-                <figure class="insta-container__item">
-                    <img src="img/insta_img_002.jpg" srcset="img/insta_img_002@2x.jpg" alt="Qata Alpaca - Artisans working Alpaca's fur.">
-                </figure>
-                <figure class="insta-container__item">
-                    <img src="img/insta_img_003.jpg" srcset="img/insta_img_003@2x.jpg" alt="Qata Alpaca - Artisans working Alpaca's fur.">
-                </figure>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/qatalpaca" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/qatalpaca/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
+                
+                
             </div>
         </div>
+
+        <style>
+            .insta-container__over {
+                position: absolute;
+                z-index: 2;
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                left: -1px;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: opacity 0.3s, visibility 0.3s;
+                text-align: center;
+                box-sizing: border-box;
+                color: #E56A54;
+                background: rgba(255,255,255,0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .counter {
+                font-size: 15px;
+            }
+            a:hover .insta-container__over {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: visibleStroke;
+            }
+            .insta-container__item {
+                position: relative;
+            }
+        </style>
 
         <div class="block-footer">
             <div class="block-footer__bg"></div>
@@ -302,7 +324,7 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="plugins/swiper/js/swiper.min.js"></script>
     <script src="https://kit.fontawesome.com/08c8d440a1.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
