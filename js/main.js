@@ -271,9 +271,9 @@ function getJSON(url, callback) {
 
     function loadInstagramData(igFeedContainer, index) {
 
-        getJSON(reqURL,
+        jQuery.getJSON(reqURL,
             function(data) {
-
+                console.log('entre');
                 var igData = {
                     thumbURLsmall: data.graphql.user.edge_owner_to_timeline_media.edges[index].node.thumbnail_resources[0].src,
                     thumbURLmedium: data.graphql.user.edge_owner_to_timeline_media.edges[index].node.thumbnail_resources[2].src,
@@ -344,6 +344,7 @@ function getJSON(url, callback) {
     var igContainer = document.querySelector(".insta-container");
     var nroPubs = 4;
 
+    //Function: how many instagram squares 
     function igLoopPubs(nro) {
         for (var i = 0; i < nro; i++) {
             loadInstagramData(igContainer, i);
