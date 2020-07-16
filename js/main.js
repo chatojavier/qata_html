@@ -271,7 +271,7 @@ function getJSON(url, callback) {
 
     function loadInstagramData(igFeedContainer, index) {
 
-        jQuery.getJSON(reqURL,
+        getJSON(reqURL,
             function(data) {
                 console.log('entre');
                 var igData = {
